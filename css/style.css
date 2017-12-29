@@ -6,17 +6,27 @@
     max-height:0px;
     overflow:hidden;
 }
-.box img{
-    position:absolute;
-}
+.box img{position:absolute;}
 
 .box:hover{
     max-height:300px;
     cursor:pointer;
     transition: 0.6s ease-in;
-}}
+}
+.box_3 img{width:150px;}
+
+#intro .intro_2 img{
+width:50%;
+}
+.carousel-control .glyphicon{
+    margin-top:25%;
+}
+
+}
 
 @media only screen and (max-width: 1500px) {
+
+
 body{
 color:black;
 width:100%;}
@@ -24,32 +34,6 @@ width:100%;}
 h1, h2, h3{
     font-family: "Century Gothic";
     font-weight: bolder;
-}
-
-#intro h1{
-    margin-bottom:40px;
-    margin-top:20px;
-    font-size:50px;
-}
-
-#intro p{
-    margin-top:90px;
-    font-weight:200;
-    font-size:20px;
-}
-
-#intro {
-    text-align: center;
-    margin-left:30px;
-    margin-right:30px;
-    margin-bottom:0;
-}
-
-#intro img{
-    margin-top:90px;
-    width:900px;
-    height:auto;
-    margin-bottom:60px;
 }
 
 ul {
@@ -84,6 +68,39 @@ li a.active {
     color:black;
 }
 
+#content{
+    margin:20px;
+    margin-top:30px;
+    margin-bottom:70px;
+    text-align: left;
+}
+
+#intro {
+    text-align: center;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:0;
+}
+
+#intro img{
+    margin-top:90px;
+    width:900px;
+    height:auto;
+    margin-bottom:60px;
+}
+
+#intro h1{
+    margin-bottom:40px;
+    margin-top:20px;
+    font-size:50px;
+}
+
+#intro p{
+    margin-top:90px;
+    font-weight:200;
+    font-size:20px;
+}
+
 .logo{
     font-weight:100;
     font-size:20px;
@@ -99,13 +116,15 @@ li a.active {
 }
 
 .logo img{
-    width:25px;
+    width:23px;
 }
+
 .logo span{
     float:right;
     margin-right:30px;
     margin-top:-33px;
 }
+
 .nav{
     font-weight:200; 
     font-size:17px;
@@ -113,7 +132,12 @@ li a.active {
     margin-top:-25px;
 }
 
+.nav:hover{
+    cursor:pointer;
+}
+
 .box h1, box_2 h1, box_4 h1{margin-top:20%;}
+
 .box{
     background-color:lightgrey;
     margin-bottom:90px;
@@ -131,10 +155,12 @@ li a.active {
     height:400px;
     text-align:center;
 }
+
 .box_3{
     text-align:center;
     margin-bottom:90px;
 }
+
 .box_3 img{
     width:200px;
     border-radius:360px;
@@ -152,12 +178,6 @@ li a.active {
     border: 0;
   }
 
-#content{
-    margin:20px;
-    margin-top:30px;
-    margin-bottom:70px;
-    text-align: left;
-}
 .carousel{
     height:400px;
     overflow:hidden;
@@ -170,7 +190,7 @@ li a.active {
     }
 
 .carousel-control .glyphicon{
-    margin-top:200px;
+    margin-top:50%;
 }
 
 .carousel-caption h3{
@@ -182,23 +202,7 @@ li a.active {
     top:auto;
     position:absolute;
 }
-footer{
-    background-color:slategrey;
-    color:white;
-    font-weight:100;
-    min-height:100px;
-    padding:15px;
-    margin-bottom:0px;
-}
 
-footer h3{
-    margin-top:-5px;
-    text-align:center;
-}
-
-footer p{
-    text-align:center;
-}
 .margin{
     min-height: 550px;
     margin-top:30px;
@@ -269,25 +273,6 @@ text-align:center;}
     margin-top:30px;
 }
 
-.basic :hover{
-    border: 1px solid coral;
-    color:coral;
-    background-color:none;
-}
-
-button[type="submit"].secondary:hover {
-    background-color:white;
-    color:black;
-    border:solid 1px black;
-}
-
-
-button[type="submit"].basic:hover {
-    background-color:white;
-    color:coral;
-    border:solid 1px white;
-}
-
 .important{
     color:white;
     background-color:coral;
@@ -299,12 +284,6 @@ button[type="submit"].basic:hover {
     border:none;
 }
 
-
-input[type="submit"].important:hover {
-    background-color:slategray;
-    color:white;
-}
-
 select {
     width: 100%;
     padding: 16px 20px;
@@ -313,6 +292,11 @@ select {
     color:black;
     border-radius: 4px;
     background-color: lightgray;
+}
+
+input[type="submit"].important:hover {
+    background-color:slategray;
+    color:white;
 }
 
 input[type=text]{
@@ -332,6 +316,23 @@ input[type=submit]:hover {
     background-color: coral;
 }
 
+button[type="submit"].secondary:hover {
+    background-color:white;
+    color:black;
+    border:solid 1px black;
+}
+
+
+button[type="submit"].basic:hover {
+    background-color:white;
+    color:coral;
+    border:solid 1px white;
+}
+
+button[type="submit"].primary:hover {
+background-color:coral
+}
+
 .styling {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -342,6 +343,10 @@ input[type=submit]:hover {
 iframe{
     padding:15px;
     margin-right:25px;
+    width:650px;
+    height:500px;
+    overflow:hidden;
+    border:none;
 }
 
 .fa {
@@ -352,18 +357,12 @@ iframe{
     width:30px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook, .fa-twitter {
+p .fa-facebook, p .fa-twitter {
     background: white;
     color: slategray;
     border-radius:360px;
     margin-top:2px;
 }
-
-
 
 .box_4 p{padding:5px;}
 .box_4{margin-bottom:20px;}
@@ -389,5 +388,23 @@ margin-bottom:20px;
     float:right;
     margin-top:-60px;
     font-size:30px;
+}
+
+footer{
+    background-color:slategrey;
+    color:white;
+    font-weight:200;
+    min-height:100px;
+    padding:15px;
+    margin-bottom:0px;
+}
+
+footer h3{
+    margin-top:-5px;
+    text-align:center;
+}
+
+footer p{
+    text-align:center;
 }
 }
